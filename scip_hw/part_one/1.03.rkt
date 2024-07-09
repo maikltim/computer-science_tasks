@@ -1,0 +1,18 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-advanced-reader.ss" "lang")((modname |1.03|) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f () #f)))
+; The sum of the squares of the two larger numbers
+; equals to the difference of 
+; the sum of the squares of the three numbers and
+; the square of the minimum numbe
+(define (f a b c)
+  (cond ((and (<= a b) (<= a c))
+         (+ (* b b)(* c c)))
+        ((and (<= b a) (<= b c))
+         (+ (* a a) (* c c)))
+        ((and (<= c a) (<= c b))
+         (+ (* a a)(* b b)))))
+
+
+(f 1 2 3) ; 13
+(f 3 2 1) ; 13
