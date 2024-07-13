@@ -1,0 +1,58 @@
+class Mario {
+    
+    field int loc;
+    constructor Mario new(int location) {
+        let loc  = location;
+        do draw();
+        return this;
+    }
+
+    /** Disposes this square. */
+    method void dispose() {
+      do Memory.deAlloc(this);
+      return;
+    }
+
+    /** Draw the mario character **/
+    method void draw() {
+        var int memAddress;
+        let memAddress = 16384+loc;
+        do Memory.poke(memAddress+0, 0);
+        do Memory.poke(memAddress+32, 480);
+        do Memory.poke(memAddress+64, 4080);
+        do Memory.poke(memAddress+96, 1392);
+        do Memory.poke(memAddress+128, 2072);
+        do Memory.poke(memAddress+160, 1080);
+        do Memory.poke(memAddress+192, 2016);
+        do Memory.poke(memAddress+224, 6160);
+        do Memory.poke(memAddress+256, 24584);
+        do Memory.poke(memAddress+288, 22532);
+        do Memory.poke(memAddress+320, 30780);
+        do Memory.poke(memAddress+352, 4380);
+        do Memory.poke(memAddress+384, 7920);
+        do Memory.poke(memAddress+416, 15480);
+        do Memory.poke(memAddress+448, 31868);
+        do Memory.poke(memAddress+480, 0);
+        return;
+    }
+
+    /** Moves mario right by 16 pixels. */
+    method void moveRight() {
+        let loc = (loc + 1);
+        if (loc < 7693) {
+            do Screen.clearScreen();
+            do draw();
+        }
+        return;
+    }
+
+    /** Moves mario left by 16 pixels. */
+    method void moveLeft() {
+        let loc = (loc - 1);
+        if (loc > 7650) {
+            do Screen.clearScreen();
+            do draw();
+        }
+        return;
+    }
+}

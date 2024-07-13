@@ -1,0 +1,47 @@
+class Game {
+    field Mario mario; // the square of this games
+    field int direction; // the squares current direction;
+                         // 0=none, 1=up, 2=down, 3=left, 4=right
+    /** Constructs a new Square Game. */
+    constructor Game new() {
+    // Creates a 30 by 30 pixels square and positions it at the top-left
+    // of the screen.
+    let mario = Mario.new(7648);
+    let direction = 0; // initial state is no movement
+    return this;
+    }
+
+    /** Disposes this game. */
+    method void dispose() {
+        do mario.dispose();
+        do Memory.deAlloc(this);
+        return;
+    }
+
+    /** Moves the square in the current direction. */
+    method void moveMario() {
+        if (direction = 3) { do mario.moveLeft(); let direction = 0; }
+        if (direction = 4) { do mario.moveRight(); let direction = 0; }
+        do Sys.wait(100); // delays the next movement
+        return;
+    }
+
+    /** Runs the game: handles the user's inputs and moves the mario accordingly */
+    method void run() {
+        var char key; // the key currently pressed by the user
+        var boolean exit;
+        let exit = false;
+
+        while (~exit) {
+            let key = Keyboard.keyPressed();
+            if (key = 81) { let exit = true; } // q key
+            if (key = 131) { let direction = 1; } // up arrow
+            if (key = 133) { let direction = 2; } // down arrow
+            if (key = 130) { let direction = 3; } // left arrow
+            if (key = 132) { let direction = 4; } // right arrow
+
+            do moveMario();
+        }
+        return;
+    }
+}

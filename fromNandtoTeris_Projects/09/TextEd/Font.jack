@@ -1,0 +1,56 @@
+class Font {
+    
+    field int loc;
+    constructor Font new(int location) {
+        let loc  = location;
+        do dispA();
+        return this;
+    }
+
+    /** Disposes this . */
+    method void dispose() {
+      do Memory.deAlloc(this);
+      return;
+    }
+
+    method void dispA() {
+        let memAddress = 16384+loc;
+        do Memory.poke(memAddress+0, 480);
+        do Memory.poke(memAddress+32, 1008);
+        do Memory.poke(memAddress+64, 816);
+        do Memory.poke(memAddress+96, 1560);
+        do Memory.poke(memAddress+128, 3084);
+        do Memory.poke(memAddress+160, 3084);
+        do Memory.poke(memAddress+192, 3084);
+        do Memory.poke(memAddress+224, 3084);
+        do Memory.poke(memAddress+256, 4092);
+        do Memory.poke(memAddress+288, 4092);
+        do Memory.poke(memAddress+320, 3084);
+        do Memory.poke(memAddress+352, 3084);
+        do Memory.poke(memAddress+384, 3084);
+        do Memory.poke(memAddress+416, 3084);
+        do Memory.poke(memAddress+448, 3084);
+        do Memory.poke(memAddress+480, 3084);
+        return;
+    }
+
+    /** Moves mario right by 16 pixels. */
+    method void moveRight() {
+        let loc = (loc + 1);
+        if (loc < 7693) {
+            do Screen.clearScreen();
+            do draw();
+        }
+        return;
+    }
+
+    /** Moves mario left by 16 pixels. */
+    method void moveLeft() {
+        let loc = (loc - 1);
+        if (loc > 7650) {
+            do Screen.clearScreen();
+            do draw();
+        }
+        return;
+    }
+}
