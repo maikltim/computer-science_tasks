@@ -1,0 +1,1615 @@
+<class>
+	<keyword> class </keyword>
+<identifier> Square </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> defined </identifierDef>
+<symbol> { </symbol>
+<classVarDec>
+	<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> defined </identifierDef>
+<symbol> , </symbol>
+<identifier> y </identifier>
+<identifierCat> int </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> defined </identifierDef>
+<symbol> ; </symbol>
+</classVarDec>
+	<classVarDec>
+	<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> defined </identifierDef>
+<symbol> ; </symbol>
+</classVarDec>
+	<subroutineDec>
+	<keyword> constructor </keyword>
+<identifier> Square </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<identifier> new </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> defined </identifierDef>
+<symbol> ( </symbol>
+<parameterList>
+	<keyword> int </keyword>
+<identifier> Ax </identifier>
+<identifierCat> ARG </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> defined </identifierDef>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> Ay </identifier>
+<identifierCat> ARG </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> defined </identifierDef>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> Asize </identifier>
+<identifierCat> ARG </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> defined </identifierDef>
+</parameterList>
+	<symbol> ) </symbol>
+<subroutineBody>
+	<symbol> { </symbol>
+<statements>
+	<letStatement>
+	<keyword> let </keyword>
+<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+<symbol> = </symbol>
+<expression>
+	<term>
+	<identifier> Ax </identifier>
+<identifierCat> ARG </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> ; </symbol>
+</letStatement>
+	<letStatement>
+	<keyword> let </keyword>
+<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+<symbol> = </symbol>
+<expression>
+	<term>
+	<identifier> Ay </identifier>
+<identifierCat> ARG </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> ; </symbol>
+</letStatement>
+	<letStatement>
+	<keyword> let </keyword>
+<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+<symbol> = </symbol>
+<expression>
+	<term>
+	<identifier> Asize </identifier>
+<identifierCat> ARG </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> ; </symbol>
+</letStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> draw </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<returnStatement>
+	<keyword> return </keyword>
+<expression>
+	<term>
+	<keyword> this </keyword>
+</term>
+	</expression>
+	<symbol> ; </symbol>
+</returnStatement>
+	</statements>
+	<symbol> } </symbol>
+</subroutineBody>
+	</subroutineDec>
+	<subroutineDec>
+	<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> dispose </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> defined </identifierDef>
+<symbol> ( </symbol>
+<parameterList>
+	</parameterList>
+	<symbol> ) </symbol>
+<subroutineBody>
+	<symbol> { </symbol>
+<statements>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Memory </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> deAlloc </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<keyword> this </keyword>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<returnStatement>
+	<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+	</statements>
+	<symbol> } </symbol>
+</subroutineBody>
+	</subroutineDec>
+	<subroutineDec>
+	<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> draw </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> defined </identifierDef>
+<symbol> ( </symbol>
+<parameterList>
+	</parameterList>
+	<symbol> ) </symbol>
+<subroutineBody>
+	<symbol> { </symbol>
+<statements>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<keyword> true </keyword>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<returnStatement>
+	<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+	</statements>
+	<symbol> } </symbol>
+</subroutineBody>
+	</subroutineDec>
+	<subroutineDec>
+	<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> erase </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> defined </identifierDef>
+<symbol> ( </symbol>
+<parameterList>
+	</parameterList>
+	<symbol> ) </symbol>
+<subroutineBody>
+	<symbol> { </symbol>
+<statements>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<keyword> false </keyword>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<returnStatement>
+	<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+	</statements>
+	<symbol> } </symbol>
+</subroutineBody>
+	</subroutineDec>
+	<subroutineDec>
+	<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> incSize </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> defined </identifierDef>
+<symbol> ( </symbol>
+<parameterList>
+	</parameterList>
+	<symbol> ) </symbol>
+<subroutineBody>
+	<symbol> { </symbol>
+<statements>
+	<ifStatement>
+	<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+	<term>
+	<symbol> ( </symbol>
+<expression>
+	<term>
+	<symbol> ( </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+</term>
+	<symbol> &lt; </symbol>
+<term>
+	<integerConstant> 254 </integerConstant>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+</term>
+	<symbol> &amp; </symbol>
+<term>
+	<symbol> ( </symbol>
+<expression>
+	<term>
+	<symbol> ( </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+</term>
+	<symbol> &lt; </symbol>
+<term>
+	<integerConstant> 510 </integerConstant>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> erase </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<letStatement>
+	<keyword> let </keyword>
+<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+<symbol> = </symbol>
+<expression>
+	<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<integerConstant> 2 </integerConstant>
+</term>
+	</expression>
+	<symbol> ; </symbol>
+</letStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> draw </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	</statements>
+	<symbol> } </symbol>
+</ifStatement>
+	<returnStatement>
+	<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+	</statements>
+	<symbol> } </symbol>
+</subroutineBody>
+	</subroutineDec>
+	<subroutineDec>
+	<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> decSize </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> defined </identifierDef>
+<symbol> ( </symbol>
+<parameterList>
+	</parameterList>
+	<symbol> ) </symbol>
+<subroutineBody>
+	<symbol> { </symbol>
+<statements>
+	<ifStatement>
+	<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+	<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> &gt; </symbol>
+<term>
+	<integerConstant> 2 </integerConstant>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> erase </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<letStatement>
+	<keyword> let </keyword>
+<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+<symbol> = </symbol>
+<expression>
+	<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> - </symbol>
+<term>
+	<integerConstant> 2 </integerConstant>
+</term>
+	</expression>
+	<symbol> ; </symbol>
+</letStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> draw </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	</statements>
+	<symbol> } </symbol>
+</ifStatement>
+	<returnStatement>
+	<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+	</statements>
+	<symbol> } </symbol>
+</subroutineBody>
+	</subroutineDec>
+	<subroutineDec>
+	<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> moveUp </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> defined </identifierDef>
+<symbol> ( </symbol>
+<parameterList>
+	</parameterList>
+	<symbol> ) </symbol>
+<subroutineBody>
+	<symbol> { </symbol>
+<statements>
+	<ifStatement>
+	<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> &gt; </symbol>
+<term>
+	<integerConstant> 1 </integerConstant>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<keyword> false </keyword>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<symbol> ( </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+</term>
+	<symbol> - </symbol>
+<term>
+	<integerConstant> 1 </integerConstant>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<letStatement>
+	<keyword> let </keyword>
+<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+<symbol> = </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> - </symbol>
+<term>
+	<integerConstant> 2 </integerConstant>
+</term>
+	</expression>
+	<symbol> ; </symbol>
+</letStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<keyword> true </keyword>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<integerConstant> 1 </integerConstant>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	</statements>
+	<symbol> } </symbol>
+</ifStatement>
+	<returnStatement>
+	<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+	</statements>
+	<symbol> } </symbol>
+</subroutineBody>
+	</subroutineDec>
+	<subroutineDec>
+	<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> moveDown </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> defined </identifierDef>
+<symbol> ( </symbol>
+<parameterList>
+	</parameterList>
+	<symbol> ) </symbol>
+<subroutineBody>
+	<symbol> { </symbol>
+<statements>
+	<ifStatement>
+	<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+	<term>
+	<symbol> ( </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+</term>
+	<symbol> &lt; </symbol>
+<term>
+	<integerConstant> 254 </integerConstant>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<keyword> false </keyword>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<integerConstant> 1 </integerConstant>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<letStatement>
+	<keyword> let </keyword>
+<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+<symbol> = </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<integerConstant> 2 </integerConstant>
+</term>
+	</expression>
+	<symbol> ; </symbol>
+</letStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<keyword> true </keyword>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<symbol> ( </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+</term>
+	<symbol> - </symbol>
+<term>
+	<integerConstant> 1 </integerConstant>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	</statements>
+	<symbol> } </symbol>
+</ifStatement>
+	<returnStatement>
+	<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+	</statements>
+	<symbol> } </symbol>
+</subroutineBody>
+	</subroutineDec>
+	<subroutineDec>
+	<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> moveLeft </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> defined </identifierDef>
+<symbol> ( </symbol>
+<parameterList>
+	</parameterList>
+	<symbol> ) </symbol>
+<subroutineBody>
+	<symbol> { </symbol>
+<statements>
+	<ifStatement>
+	<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> &gt; </symbol>
+<term>
+	<integerConstant> 1 </integerConstant>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<keyword> false </keyword>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<symbol> ( </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+</term>
+	<symbol> - </symbol>
+<term>
+	<integerConstant> 1 </integerConstant>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<letStatement>
+	<keyword> let </keyword>
+<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+<symbol> = </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> - </symbol>
+<term>
+	<integerConstant> 2 </integerConstant>
+</term>
+	</expression>
+	<symbol> ; </symbol>
+</letStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<keyword> true </keyword>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<integerConstant> 1 </integerConstant>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	</statements>
+	<symbol> } </symbol>
+</ifStatement>
+	<returnStatement>
+	<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+	</statements>
+	<symbol> } </symbol>
+</subroutineBody>
+	</subroutineDec>
+	<subroutineDec>
+	<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> moveRight </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> defined </identifierDef>
+<symbol> ( </symbol>
+<parameterList>
+	</parameterList>
+	<symbol> ) </symbol>
+<subroutineBody>
+	<symbol> { </symbol>
+<statements>
+	<ifStatement>
+	<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+	<term>
+	<symbol> ( </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+</term>
+	<symbol> &lt; </symbol>
+<term>
+	<integerConstant> 510 </integerConstant>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<keyword> false </keyword>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<integerConstant> 1 </integerConstant>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<letStatement>
+	<keyword> let </keyword>
+<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+<symbol> = </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<integerConstant> 2 </integerConstant>
+</term>
+	</expression>
+	<symbol> ; </symbol>
+</letStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<keyword> true </keyword>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	<expression>
+	<term>
+	<symbol> ( </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> ) </symbol>
+</term>
+	<symbol> - </symbol>
+<term>
+	<integerConstant> 1 </integerConstant>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> x </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	<symbol> , </symbol>
+<expression>
+	<term>
+	<identifier> y </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 1 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	<symbol> + </symbol>
+<term>
+	<identifier> size </identifier>
+<identifierCat> FIELD </identifierCat>
+<identifierInd> 2 </identifierInd>
+<identifierDef> used </identifierDef>
+</term>
+	</expression>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	</statements>
+	<symbol> } </symbol>
+</ifStatement>
+	<returnStatement>
+	<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+	</statements>
+	<symbol> } </symbol>
+</subroutineBody>
+	</subroutineDec>
+	<symbol> } </symbol>
+</class>
+	

@@ -9,26 +9,100 @@
  * consists of 32,768 words, each holding a 16-bit binary number.
  */ 
 class Memory {
+    static Array ram, heap, freeList;
 
     /** Initializes the class. */
     function void init() {
+        let ram = 0;
+        let heap = 2048;
+        let freeList = heap;
+        let heap[0] = 0;
+        let heap[1] = 14334;
+        return;
     }
 
     /** Returns the RAM value at the given address. */
     function int peek(int address) {
+        return ram[address];
     }
 
     /** Sets the RAM value at the given address to the given value. */
     function void poke(int address, int value) {
+        let ram[address] = value;
+        return;
     }
 
     /** Finds an available RAM block of the given size and returns
      *  a reference to its base address. */
     function int alloc(int size) {
+        var Array temp, block;
+
+        let temp = freeList;
+        let block = 0;
+
+        while(~(temp = 0)) {
+            if(~(temp[1] < (size + 2))) {
+                let temp[((temp[1] + 2) - (size + 2))] = 0;
+                let temp[((temp[1] + 2) - (size + 1))] = size;
+                let block = ((temp[1] + 2048 + 2) - (size));
+                let temp[1] = temp[1] - (size+2);
+                let temp = 0;
+            } else {
+                let temp = temp[0];
+            }
+        }
+
+        return block;
+
     }
 
-    /** De-allocates the given object (cast as an array) by making
+    /** (With partial defragmentation)
+    *   It checks if the block that we want to deallocate is just bellow any other block that is inside the freeList. If it is then we merge both blocks.
+    * De-allocates the given object (cast as an array) by making
      *  it available for future allocations. */
     function void deAlloc(Array o) {
+        var int size;
+        var Array next, temp, block;
+        var Boolean deFrag;
+
+        let deFrag = false;
+        let block = (o - 2);
+        let size = block[1];
+
+        let temp = freeList;
+
+        while(((~(temp[0] = 0)) & (~deFrag))) {
+            if(((temp + temp[1] + 2) = block)) {
+                let temp[1] = temp[1] + size + 2;
+                let deFrag = true;
+            }
+            let temp = temp[0];
+        }
+        
+        if (~deFrag) { 
+            let temp[0] = block;
+        }
+        let block[0] = 0;
+        return;
     }    
+
+    /**  (Without any defragmentation)
+    *   De-allocates the given object (cast as an array) by making
+     *  it available for future allocations. */
+    //function void deAlloc(Array o) {
+    //    var int size;
+    //    var Array next, temp, block;
+
+    //    let block = (o - 2);
+
+    //    let temp = freeList;
+
+    //    while(~(temp[0] = 0)) {
+    //        let temp = temp[0];
+    //    }
+    //    
+    //    let temp[0] = block;
+    //    let block[0] = 0;
+    //    return;
+    //}    
 }

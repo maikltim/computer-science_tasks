@@ -1,0 +1,97 @@
+<class>
+	<keyword> class </keyword>
+<identifier> Main </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> defined </identifierDef>
+<symbol> { </symbol>
+<subroutineDec>
+	<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> main </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> defined </identifierDef>
+<symbol> ( </symbol>
+<parameterList>
+	</parameterList>
+	<symbol> ) </symbol>
+<subroutineBody>
+	<symbol> { </symbol>
+<varDec>
+	<keyword> var </keyword>
+<identifier> SquareGame </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<identifier> game </identifier>
+<identifierCat> LOCAL </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> defined </identifierDef>
+<symbol> ; </symbol>
+</varDec>
+	<statements>
+	<letStatement>
+	<keyword> let </keyword>
+<identifier> game </identifier>
+<identifierCat> LOCAL </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+<symbol> = </symbol>
+<expression>
+	<term>
+	<identifier> SquareGame </identifier>
+<identifierCat> class </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> new </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	</expressionList>
+	<symbol> ) </symbol>
+</term>
+	</expression>
+	<symbol> ; </symbol>
+</letStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> game </identifier>
+<identifierCat> LOCAL </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> run </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<doStatement>
+	<keyword> do </keyword>
+<identifier> game </identifier>
+<identifierCat> LOCAL </identifierCat>
+<identifierInd> 0 </identifierInd>
+<identifierDef> used </identifierDef>
+<symbol> . </symbol>
+<identifier> dispose </identifier>
+<identifierCat> subroutine </identifierCat>
+<identifierDef> used </identifierDef>
+<symbol> ( </symbol>
+<expressionList>
+	</expressionList>
+	<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+	<returnStatement>
+	<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+	</statements>
+	<symbol> } </symbol>
+</subroutineBody>
+	</subroutineDec>
+	<symbol> } </symbol>
+</class>
+	
